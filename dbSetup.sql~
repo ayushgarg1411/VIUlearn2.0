@@ -1,0 +1,23 @@
+/*
+	use this file to rebuild your database. 
+*/
+/*
+keep the following 2 lines commented out the first time
+then uncomment them to wipe and reset the db
+*/
+/*
+drop table authors;
+drop table books;
+*/
+/*create 3 tables*/
+Create table subjects (subID varchar (8) not null primary key, 
+	assL varchar (255) not null, 
+	readL varchar (255) not null, 
+	PYEL varchar (255) not null, 
+	insL varchar (255) not null
+);
+/*insert some data*/
+
+Insert into subjects(subID, assL, readL, PYEL, insL) values 
+	("CSCI 265", "#link.html", "http://csci.viu.ca/~wesselsd/courses/csci265/references", "http://csci.viu.ca/~wesselsd/courses/csci265/exams/index.html", "https://www2.viu.ca/directory/employeeDetail.aspx?emp=9D0433788926A177"), ("Douglas", "Adams"), ("Neal", "Stephenson");
+

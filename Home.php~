@@ -1,0 +1,101 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang=en>
+<head>
+ <meta charset="UTF-8"/>
+        <title>CSCI 311 labs</title>
+        <style>
+        		*{
+        			padding: 0px;
+        			margin: 0px;
+        		}
+        		.navClass > ul {
+        			background-color: #5e5d5d;
+        			color:#d8d8d8;
+        			font-size: 20px;
+        		}
+        		.navClass > ul > li{
+        			list-style-type: none;
+        			display: inline-block;
+        			padding: 5px 25px;
+        			position: relative;
+        			
+        		}
+        		.navClass > ul > li:hover{
+        			background-color: #383838
+        		}
+        		ul.inner{
+        			position: absolute;
+        			background-color: black;
+        			list-style-type: none;
+        			width:125px;
+        			margin-left: 100px;
+        			display: none;
+        			top: 0px;
+        			padding-top: 7px;
+        			
+        		}
+        		ul.sub{
+        			position: absolute;
+        			background-color: #383838;
+        			list-style-type: none;
+        			width:125px;
+        			padding-top: 7px;
+        			display: none;
+        		}
+        		ul.sub li{
+        			padding-left: 25px;
+        			padding-top: 5px;
+        			padding-bottom: 5px;	
+        		}
+        	.navClass li:hover .sub{
+        		display: block;
+        	}
+        	.sub li:hover .inner{
+        		display: block;
+        	} 
+        	.navClass li:hover{
+        		background-color: gray;
+        		color:white;
+        	}
+        	
+        </style>
+</head>
+<body>
+<header><h1 style="text-align: center;">Welcome Thor</h1></header>
+<nav class="navClass">
+	<ul>
+		<li>Menu
+			<ul class="sub">
+				<li>Subjects
+					<ul class="inner">
+					<form method="POST" action="html/Subject.php" id="myform" name="myform">
+						<li><a href="html/Subject.php"><label for="sub" onclick="submitform()">CSCI 311</label><input type="hidden" name="sub" value="CSCI 311" /></a></li>
+						<li><a href="html/Subject.php"><label for="sub" onclick="submitform()">CSCI 310</label><input type="hidden" name="sub" value="CSCI 310" /></a></li>
+						<li><a href="html/Subject.php"><label for="sub" onclick="submitform()">CSCI 265</label><input type="hidden" name="sub" value="CSCI 265" /></a></li>
+						<li><input type="hidden" id="haha" name="subjectID" value=""></li>
+					</form>
+					</ul>
+				
+				</li>
+				<li>Profile</li>
+				<li>About Us</li>
+			</ul>
+		
+		</li>
+		<li>Change Contrast</li>
+		<li>Log Out</li>
+	</ul>
+</nav>
+<script>
+	function submitform()
+	{
+		var ID = document.getElementsByName("sub")[0].value;
+    																
+    	document.getElementById('haha').value = ID;
+		document.forms["myform"].submit();
+	}
+</script>
+</body>
+
+</html>
+

@@ -1,0 +1,219 @@
+body{
+		background-color: #222;
+	}
+	*{
+        			padding: 0px;
+        			margin: 0px;
+        		}
+        		.navClass > ul {
+        			background-color: rgba(45,45,45,0.98);
+        			color:#d8d8d8;
+        			font-size: 20px;
+        		}
+        		.navClass > ul > li{
+        			list-style-type: none;
+        			display: inline-block;
+        			padding: 5px 40px;
+        			position: relative;
+        			
+        		}
+        		.navClass > ul > li:hover{
+        			background-color: #383838
+        		}
+        		ul.inner{
+        			position: absolute;
+        			background-color: black;
+        			list-style-type: none;
+        			width:125px;
+        			margin-left: 100px;
+        			display: none;
+        			top: 0px;
+        			padding-top: 7px;
+        			
+        		}
+        		ul.sub{
+        			position: absolute;
+        			background-color: #383838;
+        			list-style-type: none;
+        			width:125px;
+        			padding-top: 7px;
+        			display: none;
+        		}
+        		ul.sub li{
+        			padding-left: 25px;
+        			padding-top: 5px;
+        			padding-bottom: 5px;	
+        		}
+        	.navClass li:hover .sub{
+        		display: block;
+        	}
+        	.sub li:hover .inner{
+        		display: block;
+        	} 
+        	.navClass li:hover{
+        		background-color: gray;
+        		color:white;
+        	}
+	#heading{
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight:800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  text-align: center;
+	}
+	.main{
+		position: absolute;
+		right: 25%;
+		left:30%;
+		/*background-image:url('mustard.jpg');
+		background-repeat: no-repeat;
+ 		background-size: 500px 700px;*/
+ 		background-color: rgba(45,45,45,0.98);
+		width:500px;
+		height: 700px;
+		margin-top:30px; 
+		text-align: center;
+	}
+	.nav{
+		position: absolute;
+		right: 10%;
+		left:15%;
+
+	}
+	.nava{
+  		border: 1px solid;
+  		padding: 10px;
+  		box-shadow: 5px 10px #888888;
+  		display: inline-block;
+  		font-size: 30px;
+  		font-weight:500;
+  		background-color: white;
+
+}	
+	.nava2{
+  		border: 1px solid;
+  		padding: 10px;
+  		box-shadow: 5px 10px #888888;
+  		display: inline-block;
+  		font-size: 30px;
+  		font-weight:500;
+  		background-color: white;
+		width: 300px;
+		text-align: center;
+}
+
+.box1{
+	width:450px;
+	height: 40px;
+	color: white;
+	text-align:center;
+	border: 1px solid white;
+	display: flex;
+	overflow:hidden;
+	margin-left: 20px;
+}
+.leftside, .rightside{
+	display: flex;
+	text-align: center;
+	border: 1px solid white;
+	width: 100%;
+	left:50%;
+	padding: 10px 40px 8px 60px;
+	text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 12;
+}
+.leftside:hover{
+	color: grey;
+  cursor: pointer;
+}
+
+.rightside{
+  color: #151515;
+  background-color: white;
+}
+.signature {
+  position: fixed;
+  font-family: sans-serif;
+  font-weight: 100;
+  bottom: 10px;
+  left: 0;
+  letter-spacing: 4px;
+  font-size: 10px;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hvr {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr:hover{
+	background-color: #2098D1;
+	color:white;
+	transition-duration: 0.3s;
+
+}
+#bar:visited{
+   color:#d8d8d8;
+   font-size: 20px;
+	text-decoration: none;
+	
+}
+#bar:link{
+   color:#d8d8d8;
+   font-size: 20px;
+	text-decoration: none;
+	
+}
+.inside{
+	width: 90%;
+	margin-left: 10px;
+	border: 1px solid white;
+	padding: 5px;
+	height:80px;
+	display: flex;
+}
+.mini{
+	color: white;
+	text-align: center;
+	display: flex;
+	width:33%;
+	border-right: 1px solid gray;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.outside{
+	overflow-y: scroll;
+	width: 90%;
+	height: 400px;
+	margin-left:20px;
+}
+/* Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+
+    #primary { width:67%; }
+
+    #secondary { width:30%; margin-left:3%;}  
+
+}

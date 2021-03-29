@@ -1,0 +1,93 @@
+body{
+	background-image: url('https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Black-3D-Polygons-Dark-Pattern-Ultra-HD-Wallpaper-PIC-WPC009536.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+*{
+        			padding: 0px;
+        			margin: 0px;
+        		}
+        		.navClass > ul {
+        			background-color: #5e5d5d;
+        			color:#d8d8d8;
+        			font-size: 20px;
+        		}
+        		.navClass > ul > li{
+        			list-style-type: none;
+        			display: inline-block;
+        			padding: 5px 25px;
+        			position: relative;
+        			
+        		}
+        		.navClass > ul > li:hover{
+        			background-color: #383838
+        		}
+        		ul.inner{
+        			position: absolute;
+        			background-color: black;
+        			list-style-type: none;
+        			width:125px;
+        			margin-left: 100px;
+        			display: none;
+        			top: 0px;
+        			padding-top: 7px;
+        			
+        		}
+        		ul.sub{
+        			position: absolute;
+        			background-color: #383838;
+        			list-style-type: none;
+        			width:125px;
+        			padding-top: 7px;
+        			display: none;
+        		}
+        		ul.sub li{
+        			padding-left: 25px;
+        			padding-top: 5px;
+        			padding-bottom: 5px;	
+        		}
+        	.navClass li:hover .sub{
+        		display: block;
+        	}
+        	.sub li:hover .inner{
+        		display: block;
+        	} 
+        	.navClass li:hover{
+        		background-color: gray;
+        		color:white;
+        	}
+        	a:visited{
+				
+   			color:#d8d8d8;
+   			font-size: 20px;
+				text-decoration: none;
+	
+			}
+			a:link{
+				
+   			color:#d8d8d8;
+   			font-size: 20px;
+				text-decoration: none;
+	
+			}
+			/* Tablet Landscape */
+
+@media screen and (max-width: 1060px) {
+
+    #primary { width:67%; }
+
+    #secondary { width:30%; margin-left:3%;}  
+
+}
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+
+    #primary { width:100%; }
+
+    #secondary { width:100%; margin:0; border:none; }
+
+}
+
+html { font-size:100%; }

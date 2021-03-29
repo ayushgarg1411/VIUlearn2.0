@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		
+	}
+	#heading{
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight:800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  text-align: center;
+	}
+	.main{
+		position: absolute;
+		right: 25%;
+		left:30%;
+		/*background-image:url('mustard.jpg');
+		background-repeat: no-repeat;
+ 		background-size: 500px 700px;*/
+ 		background-color: white;
+		width:500px;
+		height: 700px;
+		margin-top:30px; 
+		text-align: center;
+	}
+	.nav{
+		position: absolute;
+		right: 10%;
+		left:15%;
+
+	}
+	.nava{
+  		border: 1px solid;
+  		padding: 10px;
+  		box-shadow: 5px 10px #888888;
+  		display: inline-block;
+  		font-size: 30px;
+  		font-weight:500;
+  		background-color: #ffd025;
+
+}	
+	.nava2{
+  		border: 1px solid;
+  		padding: 10px;
+  		box-shadow: 5px 10px #888888;
+  		display: inline-block;
+  		font-size: 30px;
+  		font-weight:500;
+  		background-color: #ffd025;
+		width: 300px;
+		text-align: center;
+}
+</style>
+</head>
+<body background="bg2.jpg">
+	<div class="main">
+	<h2 id="heading">CSCI 311</h2><br>
+	<div class="nav">
+		<div class="nava">Content</div>
+		<div class="nava">Assignment</div>
+	</div><br><br><br><br>
+		<div><br><br>
+			<div class="nava2">Reading</div><br><br>
+			<div class="nava2">Previous Year Exam</div><br><br>
+			<div class="nava2">About Instructor</div>
+		</div>	
+	</div>
+</body>
+
+</html>

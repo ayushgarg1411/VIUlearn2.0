@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+body{
+	background-color: #222;
+}
+.box1{
+	width:450px;
+	height: 40px;
+	color: white;
+	text-align:center;
+	border: 1px solid white;
+	display: flex;
+	overflow:hidden;
+}
+.leftside, .rightside{
+	display: flex;
+	text-align: center;
+	border: 1px solid white;
+	width: 100%;
+	left:50%;
+	padding: 10px 30px 8px 65px;
+	text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s ease all;
+  font-size: 12;
+}
+.leftside:hover{
+	color: grey;
+  cursor: pointer;
+}
+
+.rightside{
+  color: #151515;
+  background-color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="box1">
+<div class="leftside">Content</div>
+<div class="rightside">Assignment</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!Doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang=en>
+<head>
+ <meta charset="UTF-8"/>
+        <title>CSCI 311 labs</title>
+        <style>
+        		*{
+        			padding: 0px;
+        			margin: 0px;
+        		}
+        		.navClass > ul {
+        			background-color: #5e5d5d;
+        			color:#d8d8d8;
+        			font-size: 20px;
+        		}
+        		.navClass > ul > li{
+        			list-style-type: none;
+        			display: inline-block;
+        			padding: 5px 25px;
+        			position: relative;
+        			
+        		}
+        		.navClass > ul > li:hover{
+        			background-color: #383838
+        		}
+        		ul.inner{
+        			position: absolute;
+        			background-color: black;
+        			list-style-type: none;
+        			width:125px;
+        			margin-left: 100px;
+        			display: none;
+        			top: 0px;
+        			padding-top: 7px;
+        			
+        		}
+        		ul.sub{
+        			position: absolute;
+        			background-color: #383838;
+        			list-style-type: none;
+        			width:125px;
+        			padding-top: 7px;
+        			display: none;
+        		}
+        		ul.sub li{
+        			padding-left: 25px;
+        			padding-top: 5px;
+        			padding-bottom: 5px;	
+        		}
+        	.navClass li:active .sub{
+        		display: block;
+        	}
+        	.sub li:active .inner{
+        		display: block;
+        	} 
+        	.navClass li:active{
+        		background-color: gray;
+        		color:white;
+        	}
+        	
+        </style>
+</head>
+<body>
+<header><h1 style="text-align: center;">Welcome Thor</h1></header>
+<nav class="navClass">
+	<ul>
+		<li>Menu
+			<ul class="sub">
+				<li>Subjects
+					<ul class="inner">
+						<li>CSCI 311</li>
+						<li>CSCI 310</li>
+						<li>CSCI 265</li>
+					</ul>
+				
+				</li>
+				<li>Profile</li>
+				<li>About Us</li>
+			</ul>
+		
+		</li>
+		<li>Change Contrast</li>
+		<li>Log Out</li>
+	</ul>
+</nav>
+</body>
+
+</html>
+
